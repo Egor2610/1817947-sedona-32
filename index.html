@@ -1,12 +1,169 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<body>
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo">
+      <img src="#" width="138" height="70" alt="Логотип Седона.">
+    </a>
+    <ul class="site-navigation-list">
+      <li><a class="site-navigation-item" href="index.html">Главная</a></li>
+      <li><a class="site-navigation-item" href="about.html">О Седоне</a></li>
+      <li><a class="site-navigation-item" href="catalog.html">Гостиницы</a></li>
+    </ul>
+    <ul class="site-navigation navigation-user">
+      <li><a href="#"><span class="visually-hidden">Поиск</span></a></li>
+      <li><a href="#"><span class="visually-hidden">Избранное</span></a></li>
+      <li><a href="#"><span class="visually-hidden">Хочу сюда!</span></a></li>
+    </ul>
+  </nav>
+</header>
 
-  </body>
+<main class="container">
+  <div class=foto-wrapper>
+    <img class="welcome-sedona" src="#" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+  </div>
+  <div class="about-sedona">
+    <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+    <p> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+  </div>
+
+  <section class="advantages">
+    <h2 class="visually-hidden">Преимущества</h2>
+    <div class="advantages-point">
+      <p class="advantages-point-title">Настоящий<br>городок</p>
+      <p>— №1 —</p>
+      <p>Седона — не аттракцион<br>для туристов, там течёт<br>своя жизнь</p>
+      <img src="#" width="800" height="384" alt="Седона, красивые дома.">
+    </div>
+    <ul class="advantages-list">
+      <li class="advantages-item">
+        <p class="advantages-item-title">Жильё</p>
+        <p>Рекомендуем пожить<br>в настоящем мотеле<br>, всё как в кино!</p>
+      </li>
+      <li class="advantages-item">
+        <p class="advantages-item-title">Еда</p>
+        <p>Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+      </li>
+      <li class="advantages-item">
+        <p class="advantages-item-title">Сувениры</p>
+        <p>Не только китайского,<br>но и настоящего местного<br>производства!</p>
+      </li>
+    </ul>
+    <div class="advantages-point">
+      <p class="advantages-point-title">Там есть<br>мост дьявола</p>
+      <p>— №2 —</p>
+      <p>Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
+      <img src="#" width="800" height="384" alt="Мост дьявола природного происхождения.">
+    </div>
+
+    <div class="advantages-clause-container">
+      <div class="advantages-clause">
+        <p class="advantages-clause-title">Небольшая<br>площадь</p>
+        <p>— №3 —</p>
+        <p>Все достопримечательности<br>находятся очень близко</p>
+      </div>
+      <div class="advantages-clause">
+        <p class="advantages-clause-title">Красивая<br>дорога</p>
+        <p>— №4 —</p>
+        <p>Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+      </div>
+      <div class="advantages-clause">
+        <p class="advantages-clause-title">Мало<br>туристов</p>
+        <p>— №5 —</p>
+        <p>Большинство едет в Гранд<br>Каньон и толпится там</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hotel-search">
+    <h2 class="visually-hidden">Поиск гостиницы</h2>
+    <p class="hotel-search-title">Заинтересовались?</p>
+    <p class="hotel-search-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <button class="search-button" type="button">Поиск гостиницы в Седоне</button>
+  </section>
+
+</main>
+
+<footer class="main-footer">
+  <h2 class="visually-hidden">Подписка на рассылку</h2>
+    <p class="newsletter">Подпишитесь на рассылку</p>
+    <p class="newsletter-info">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+
+<!---ФОРМА ПОДПИСКИ НА РАССЫЛКУ-->
+
+  <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+    <p class="newsletter-email">
+      <label class="visually-hidden" for="newsletter-email">Email</label>
+      <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+    </p>
+    <button class="button newsletter-button" type="submit">
+      <span class="visually-hidden">Подписаться</span>
+    </button>
+  </form>
+
+  <section class="footer-social">
+    <h3 class="visually-hidden">Социальные сети</h3>
+    <ul>
+      <li><a class="social-button" href="#">Twitter</a></li>
+      <li><a class="social-button" href="#">Facebook</a></li>
+      <li><a class="social-button" href="#">Youtube</a></li>
+    </ul>
+  </section>
+  <section class="footer-contacts">
+    <h3 class="visually-hidden">Телефон</h3>
+    <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+  </section>
+
+  <p class="visually-hidden">Website by:<a href="https://htmlacademy.ru"><img src="#" width="115" height="34" alt="Логотип html academy."></a>
+  </p>
+
+  <!---ФОРМА ПОИСКА ГОСТИНИЦЫ-->
+
+  <form class="reservation" action="https://echo.htmlacademy.ru" method="post">
+    <div class="reservation-arrival">
+      <label class="reservation-arrival-label" for="arrival-date">Дата заезда:</label>
+      <div class="reservation-arrival-date">
+        <input class="reservation-item-input" type="text" id="arrival-date" name="arrival-date" placeholder="27 Апреля 2020">
+        <button class="icon-calendar" type="button">Календарь</button>
+        <p>Мы не можем отправить вас в прошлое</p>
+      </div>
+    </div>
+    <div class="reservation-departure">
+      <label class="reservation-departure-label" for="departure-date">Дата выезда:</label>
+      <div class="reservation-departure-date">
+        <input class="reservation-item-input" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021">
+        <button class="icon-calendar" type="button">Календарь</button>
+        <p>На эти даты есть свободные номера. Пока есть.</p>
+      </div>
+    </div>
+
+    <div class="reservation-item">
+      <label class="reservation-item-label" for="adult">Взрослые:</label>
+      <div class="reservation reservation-adult">
+        <button class="button-minus" type="button" id="amount-adult-minus"><span>-</span></button>
+        <input class="reservation-item-input" type="number" min="1" max="10" name="adult" value="2" id="adult">
+        <button class="button-plus" type="button" id="amount-adult-plus"><span>+</span></button>
+      </div>
+
+      <label class="reservation-item-label" for="children">Дети:</label>
+      <div class="reservation-item-children">
+        <button class="button-minus" type="button" id="amount-children-minus"><span>-</span></button>
+        <input class="reservation-item-input" type="number" min="0" max="10" name="children" value="1" id="children">
+        <button class="button-plus" type="button" id="amount-children-plus"><span>+</span></button>
+      </div>
+    </div>
+    <button class="form-button" type="submit">Найти</button>
+  </form>
+  <button type="button">Закрыть</button>
+</footer>
+</body>
+
+
 </html>
+
