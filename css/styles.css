@@ -48,7 +48,6 @@ body {
   color: var(--basic-black);
   background-color: var(--basic-white);
   min-height: 100%;
-  box-shadow: 0px 0px 15px rgba (0, 0, 0, 0,2);
 }
 
 /*-------------- header ----------------*/
@@ -176,7 +175,7 @@ body {
 }
 .newsletter-info {
   font-size: 30px;
-  line-height: 36x;
+  line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -274,7 +273,7 @@ body {
 }
 .newsletter-info-catalog {
   font-size: 30px;
-  line-height: 36x;
+  line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -292,14 +291,14 @@ body {
   text-transform: uppercase;
 }
 
-.hotel-search-button {
+.button-search {
   font-size: 20px;
   line-height: 36px;
   background-color: var(--special-warm-light);
   width: 575px;
   height: 60px;
 }
-.newsletter-button {
+.button-newsletter {
   font-size: 20px;
   line-height: 26px;
   width: 200px;
@@ -311,16 +310,29 @@ body {
   height: 48px;
   border-radius: 4px;
 }
+.button-reset {
+ line-height: 23px;
+ font-weight: 400;
+ background-color: transparent;
+ background-repeat: no-repeat;
+ border: none;
+ cursor: pointer;
+ overflow: hidden;
+ outline: none;
+ width: 160px;
+ height: 23px;
+
+}
 .button-form {
   font-size: 20px;
   line-height: 40px;
   width: 575px;
   height: 60px;
 }
-.hotel-details {
+.button-details {
   background-color: var(--special-warm-light);
 }
-.hotel-booking-saved {
+.button-booking-saved {
   background-color: var(--special-neutral-light);
 }
 .button-more {
@@ -328,6 +340,10 @@ body {
   line-height: 26px;
   width: 625px;
   height: 55px;
+}
+.button-close {
+  background-color: var(--basic-light);
+  border: none;
 }
 
 /*-------------- search-form ----------------*/
@@ -341,11 +357,19 @@ body {
   line-height: 40px;
   font-weight: 700;
   text-align: center;
+  width: 715px;
+  height: 561px;
+  border-radius: 30px;
+  box-shadow: 0px 25px 50px rgba(0,0,0,0.15);
 }
 .reservation-status-error {
   font-size: 16px;
   font-weight: 400;
   color: var(--status-error);
+}
+.reservation--arrival {
+  width: 575px;
+  height: 50px;
 }
 .reservation-status {
   font-size: 16px;
@@ -359,6 +383,8 @@ body {
   background-color: var(--basic-light);
   width: 420px;
   height: 50px;
+  border: none;
+  border-radius: 4px;
 }
 .reservation-item-label-hover {
   font-size: 16px;
@@ -366,7 +392,7 @@ body {
   font-weight: 400;
   color: var(--basic-white);
   background-color: var(--basic-dark);
-  box-shadow: 0px 15px 30px rgba (0,0,0,0.3);
+  box-shadow: 0px 15px 30px rgba(0,0,0,0.3);
   width: 256px;
   height: 143px;
 }
