@@ -7,13 +7,14 @@
   </head>
 
   <body>
+    <div class="page-container">
     <header class="main-header">
       <nav class="navigation">
         <a class="main-header-logo">
           <img src="img/sedona-logo.svg" width="138" height="70" alt="Логотип Седона.">
         </a>
         <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link link-current" href="index.html">Главная</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#" aria-current="page">Главная</a></li>
           <li class="navigation-item"><a class="navigation-link" href="about.html">О Седоне</a></li>
           <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -26,6 +27,7 @@
     </header>
 
     <main class="container">
+
       <div class=foto-wrapper>
         <img class="welcome-sedona" src="img/welcome-to-sedona.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
       </div>
@@ -60,29 +62,28 @@
           </li>
         </ul>
         <div class="advantages-point">
+          <img src="img/sedona-canyon.jpg" width="800" height="384" alt="Мост дьявола природного происхождения.">
           <p class="advantages-point-title">Там есть<br>мост дьявола</p>
           <p>— №2 —</p>
           <p>Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
-          <img src="img/sedona-canyon.jpg" width="800" height="384" alt="Мост дьявола природного происхождения.">
         </div>
-
-        <div class="advantages-clause-container">
-          <div class="advantages-list">
+        <ul class="advantages-list">
+          <li>
             <p class="advantages-item-title">Небольшая<br>площадь</p>
             <p>— №3 —</p>
             <p>Все достопримечательности<br>находятся очень близко</p>
-          </div>
-          <div class="advantages-list-light">
+          </li>
+          <li class="advantages-item-road">
             <p class="advantages-item-title">Красивая<br>дорога</p>
             <p>— №4 —</p>
             <p>Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
-          </div>
-          <div class="advantages-list">
+          </li>
+          <li>
             <p class="advantages-item-title">Мало<br>туристов</p>
             <p>— №5 —</p>
             <p>Большинство едет в Гранд<br>Каньон и толпится там</p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
 
       <section class="hotel-search">
@@ -95,6 +96,7 @@
     </main>
 
     <footer class="main-footer">
+      <div class='newsletter-container'>
       <div class="newsletter">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p class="newsletter-info">Подпишитесь на рассылку</p>
@@ -108,6 +110,7 @@
           <button class="button button-newsletter" type="submit">Подписаться</button>
         </form>
       </div>
+    </div>
 
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
@@ -140,35 +143,30 @@
       </div>
       <div class="reservation-departure">
         <label class="reservation-departure-label" for="departure-date">Дата выезда:</label>
-        <div class="reservation-departure-date">
-          <input class="reservation-item-input" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021">
-          <button class="icon-calendar" type="button">Календарь</button>
-          <p class="reservation-status">На эти даты есть свободные номера. Пока есть.</p>
-        </div>
+        <input class="reservation-item-input" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021">
+        <button class="icon-calendar" type="button">Календарь</button>
+        <p class="reservation-status">На эти даты есть свободные номера. Пока есть.</p>
+
       </div>
 
       <div class="reservation-item">
         <label class="reservation-item-label" for="adult">Взрослые:</label>
-        <div class="reservation-item-adult">
-          <button class="button-minus" type="button" id="amount-adult-minus"><span>-</span></button>
-          <input class="reservation-item" type="number" min="1" max="10" name="adult" value="2" id="adult">
-          <button class="button-plus" type="button" id="amount-adult-plus"><span>+</span></button>
-        </div>
+        <button class="button-minus" type="button" id="amount-adult-minus"><span>-</span></button>
+        <input class="reservation-item" type="number" min="1" max="10" name="adult" value="2" id="adult">
+        <button class="button-plus" type="button" id="amount-adult-plus"><span>+</span></button>
 
         <label class="reservation-item-label" for="children">Дети:</label>
-
-        <div class="reservation-item-children">
-          <button class="button-minus" type="button" id="amount-children-minus"><span>-</span></button>
-          <input class="reservation-item" type="number" min="0" max="10" name="children" value="1" id="children">
-          <button class="button-plus" type="button" id="amount-children-plus"><span>+</span></button>
+        <span>i</span>
+        <div class="reservation-item-popup">
+          <p class="reservation-item-popup">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
         </div>
+        <button class="button-minus" type="button" id="amount-children-minus"><span>-</span></button>
+        <input class="reservation-item" type="number" min="0" max="10" name="children" value="1" id="children">
+        <button class="button-plus" type="button" id="amount-children-plus"><span>+</span></button>
       </div>
       <button class="button button-form" type="submit">Найти</button>
-      <div class="reservation-item-label-hover">
-        <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-      </div>
     </form>
-
+  </div>
   </body>
 
 
